@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* Globals */
+@import "global/reset";
+@import "global/variables";
+@import "global/media-queries";
+@import "global/defaults";
+
+/* Templates */
+@import "templates/about";
+@import "templates/footer";
+@import "templates/equipment";
+@import "templates/header";
+@import "templates/homepage";

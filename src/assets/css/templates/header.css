@@ -1,0 +1,73 @@
+.competition-coffee-header {
+	display: flex;
+	justify-content: space-between;
+	padding: 2% 0;
+
+	.cch-contact-menu {
+		display: flex;
+		flex-direction: column;
+
+		.cch-contact {
+			align-items: space-between;
+			display: flex;
+			justify-content: flex-end;
+			width: 100%;
+
+			p {
+				color: $cc-orange;
+				font-size: 20px;
+				padding-right: 15px;
+			}
+
+			i {
+				color: $cc-brown;
+				font-size: 20px;
+			}
+		}
+
+		.cch-menu {
+
+			ul {
+				display: flex;
+				justify-content: space-between;
+				width: 600px;
+
+				a {
+					color: $cc-brown;
+					display: block;
+					font-family: $font-serif;
+					font-size: 20px;
+					line-height: 1.3;
+					position: relative;
+					text-decoration: none;
+					top: 6px;
+					transition: padding 0.3s ease-in;
+
+					&:before {
+						background-color: $cc-brown;
+						bottom: 1px;
+						content: '';
+						display: block;
+						height: 2px;
+						left: 0px;
+						position: absolute;
+						transform: scale(0,1);
+						transform-origin: right top;
+						transition: transform 0.3s ease-out;
+						width: 100%;
+					}
+
+					&:active::before {
+						background-color: $cc-brown;
+					}
+
+					&:hover::before,
+					&:focus::before {
+						transform: scale(1,1);
+						transform-origin: left top;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+/*
+Global Styles: Website Variables
+Author: Jay Bauer
+Organization: Elite Digital
+
+All global project variables should go here
+*/
+
+/* Media Query Sizes */
+$phone: 599px;
+$tablet-port: 600px;
+$tablet-land: 900px;
+$desktop: 1200px;
+$desktop-big: 1800px;
+
+/* Colours */
+$cc-beige: #f3e7de;
+$cc-brown: #706463;
+$cc-dark-brown: #605352;
+$cc-green: #88c392;
+$cc-orange: #dab69a;
+
+/* Fonts */
+$font-serif: 'Klinic Book', serif;
+$font-serif-bold: 'Klinic Bold', serif;
+$font-sans-serif: 'Big John', sans-serif
+
+/* Project Defaults */
+

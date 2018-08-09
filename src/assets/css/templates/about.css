@@ -1,0 +1,246 @@
+.competition-coffee-about {
+
+	.cca-hero {
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.cca-about-content-box {
+		-moz-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.15);
+		background-color: white;
+		bottom: 300px;
+		box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.15);
+		margin-bottom: 3%;
+		margin-top: 3%;
+		padding: 5% 3%;
+		position: relative;
+
+		.cca-hero-circle {
+			align-items: center;
+			background-color: $cc-green;
+			border-radius: 50%;
+			display: flex;
+			flex-direction: column;
+			height: 500px;
+			position: absolute;
+			right: 2%;
+			top: -43%;
+			width: 500px;
+			z-index: 10;
+
+			h1 {
+				color: white;
+				font-size: 30px;
+				line-height: 1.3;
+				padding: 25% 5% 3% 5%;
+				text-align: center;
+
+				&:after {
+					border: none;
+					content: '';
+				}
+			}
+
+			p {
+				color: white;
+				font-family: $font-serif;
+				font-size: 20px;
+				padding: 0 10%;
+				text-align: center;
+
+				strong {
+					font-family: $font-serif-bold;
+				}
+
+				&:nth-child(3) {
+					padding: 5% 15% 0 15%;
+				}
+			}
+
+			button {
+				background-color: $cc-dark-brown;
+				color: white;
+				font-family: $font-serif-bold;
+				font-size: 20px;
+				margin-top: 5%;
+				padding: 1% 2%;
+			}
+		}
+
+		.cca-about-content-container {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		h1 {
+			color: $cc-brown;
+			font-family: $font-sans-serif;
+			font-size: 30px;
+			padding-bottom: 5%;
+			position: relative;
+
+			&:after {
+				border-bottom: 3px solid $cc-green;
+				content: '';
+				height: 3px;
+				left: 0px;
+				position: absolute;
+				top: 40px;
+				width: 100%;
+			}
+		}
+
+		.cca-about-content-copy {
+			width: 60%;
+
+			p {
+				color: $cc-brown;
+				font-family: $font-serif;
+				font-size: 20px;
+				line-height: 1.3;
+				padding-bottom: 3%;
+			}
+		}
+
+		.cca-about-content-image {
+			display: flex;
+			justify-content: center;
+			width: 40%;
+		}
+	}
+
+	.cca-our-services {
+		display: flex;
+		margin-bottom: 20%;
+		margin-top: -250px;
+
+		.cca-our-services-image {
+			padding-left: 3%;
+			width: 45%;
+		}
+
+		h1 {
+			color: $cc-brown;
+			display: inline-block;
+			font-family: $font-sans-serif;
+			font-size: 30px;
+			padding-bottom: 5%;
+			position: relative;
+
+			&:after {
+				border-bottom: 3px solid $cc-green;
+				content: '';
+				height: 3px;
+				left: 0px;
+				position: absolute;
+				top: 30px;
+				width: 100%;
+			}
+		}
+
+		ul {
+			color: $cc-dark-brown;
+			list-style-type: disc;
+			padding-left: 1em;
+
+			li {
+				font-family: $font-serif;
+				font-size: 20px;
+				line-height: 1.3;
+				text-indent: 1em;
+			}
+		}
+	}
+
+	.cca-about-content-box-flex {
+		display: flex;
+
+		.cca-about-content-image {
+			width: 50%;
+		}
+
+		h1 {
+			display: inline-block;
+		}
+	}
+
+	.cca-about-questions {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 5%;
+		margin-top: -280px;
+
+		h1 {
+			color: $cc-brown;
+			display: inline-block;
+			font-family: $font-sans-serif;
+			font-size: 30px;
+			padding-bottom: 2%;
+			position: relative;
+			text-align: center;
+
+			&:after {
+				border-bottom: 3px solid $cc-green;
+				content: '';
+				height: 3px;
+				left: 0px;
+				position: absolute;
+				top: 30px;
+				width: 100%;
+			}
+		}
+
+		ol {
+			display: flex;
+			flex-direction: column;
+			padding-left: 180px;
+
+			li {
+				color: $cc-dark-brown;
+				font-family: $font-serif;
+				font-size: 20px;
+				padding: 2% 0;
+			}
+		}
+	}
+
+	.cca-cta {
+		display: flex;
+
+		.cca-cta-content-container {
+			background-color: $cc-beige;
+			padding: 14% 2% 0 20%;
+			width: 40%;
+
+			p {
+				color: $cc-dark-brown;
+				font-family: $font-serif-bold;
+				font-size: 30px;
+				line-height: 1.1;
+			}
+
+			button {
+				background-color: $cc-green;
+				color: white;
+				font-family: $font-serif-bold;
+				font-size: 30px;
+				margin-top: 5%;
+				padding: 2% 5%;
+			}
+		}
+
+		.cca-cta-image {
+			width: 60%;
+
+			img {
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+}

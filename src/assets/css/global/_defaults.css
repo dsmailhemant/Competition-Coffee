@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Klinic Book";
+	src: url("../static/fonts/KlinicSlabBook.otf") format('opentype');
+}
+@font-face {
+	font-family: "Klinic Bold";
+	src: url("../static/fonts/KlinicSlabBold.otf") format('opentype');
+}
+
+@font-face {
+	font-family: "Big John";
+	src: url("../static/fonts/BIG-JOHN.otf") format('opentype');
+}
+
+.competition-coffee-wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+p {
+	font-family: $font-serif;
+}
