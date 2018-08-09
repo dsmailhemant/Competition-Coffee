@@ -10,5 +10,8 @@
 @import "templates/about";
 @import "templates/footer";
 @import "templates/equipment";
+@import "templates/coffee";
+@import "templates/contact";
+@import "templates/snacks";
 @import "templates/header";
 @import "templates/homepage";

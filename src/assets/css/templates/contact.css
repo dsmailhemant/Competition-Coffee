@@ -1,0 +1,11 @@
+.competition-coffee-contact form{display: flex; max-width: 475px; width: 100%; flex-wrap: wrap; margin: auto; flex-direction: column;}
+.competition-coffee-contact form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.competition-coffee-contact form .half-group {
+    display: flex; flex-wrap: wrap; justify-content: space-between
+}
+.competition-coffee-contact form .form-group.half-width{width: 48%;}

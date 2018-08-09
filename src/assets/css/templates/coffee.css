@@ -1,0 +1,21 @@
+.coffee-start-now{
+	padding: 2% 5%;
+}
+.competition-coffee-coffee .cce-content-box .cce-content-container .cce-content-copy p{
+	text-align: left;
+    width: 100%;
+    max-width: 506px;
+}
+.competition-coffee-coffee .cce-content-box .cce-content-container{
+	align-items: flex-start;
+}
+.competition-coffee-coffee .cce-equipment-container .cce-equipment-row .cce-coffee-column{height: auto;}
+.competition-coffee-coffee .cce-equipment-container .cce-equipment-row .cce-coffee-column .cce-coffee-image-container{align-items: center;}
+.competition-coffee-coffee .cce-equipment-container .cce-equipment-row .cce-coffee-column .cce-coffee-image-container img{height: auto; max-width: 100%;}
+.competition-coffee-coffee .cce-equipment-container .cce-equipment-row .cce-coffee-column p{color: #605352; font-size: 20px; }
+.competition-coffee-coffee .cce-coffee .cce-cta-content-container {
+    padding-left: 13.5%;
+    width: 50%;
+    padding-top: 8%;
+}
+.competition-coffee-coffee .cce-coffee .cce-cta-image{width: 50%;}
