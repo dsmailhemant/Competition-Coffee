@@ -1,0 +1,19 @@
+@media (min-width: 320px)and (max-width: 767px) {
+    .cch-logo-container{max-width: 100px;}
+    .cch-logo-container img{max-width: 100%}
+    .competition-coffee-equipment .cce-content-box{position: static}
+    .competition-coffee-equipment .cce-content-box .cce-hero-circle{position: static; width: 300px; height: 300px; padding: 0; padding-top: 55px;}
+    .competition-coffee-contact form p{width: 100%; margin-top: 15px; text-align: center}
+    .competition-coffee-footer .competition-coffee-wrapper{flex-direction: column}
+    .competition-coffee-footer .ccf-logo-info{flex-direction: column}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info p{padding: 0}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info{position: static}
+    .competition-coffee-footer{padding: 15px; text-align: center}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social{flex-direction: column}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact{width: 100%;}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-social{width: auto; padding: 0}
+    .competition-coffee-equipment .cce-content-box .cce-hero-circle h1{width: 90%; font-size: 20px; padding: 0}
+    .competition-coffee-equipment .cce-content-box .cce-hero-circle p{padding: 0; font-size: 15px; width: 90%;}
+    .competition-coffee-header{padding: 10px 15px}
+
+}
