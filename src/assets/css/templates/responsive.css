@@ -1,19 +1,61 @@
 @media (min-width: 320px)and (max-width: 767px) {
-    .cch-logo-container{max-width: 100px;}
+    .cch-logo-container{max-width: 150px;}
     .cch-logo-container img{max-width: 100%}
     .competition-coffee-equipment .cce-content-box{position: static}
-    .competition-coffee-equipment .cce-content-box .cce-hero-circle{position: static; width: 300px; height: 300px; padding: 0; padding-top: 55px;}
+    .competition-coffee-equipment .cce-content-box .cce-hero-circle{position: static; width: 300px; height: 300px; padding: 0; padding-top: 70px;}
     .competition-coffee-contact form p{width: 100%; margin-top: 15px; text-align: center}
     .competition-coffee-footer .competition-coffee-wrapper{flex-direction: column}
     .competition-coffee-footer .ccf-logo-info{flex-direction: column}
     .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info p{padding: 0}
-    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info{position: static}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info{position: static; margin-bottom: 20px;}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content button{font-size: 20px}
     .competition-coffee-footer{padding: 15px; text-align: center}
     .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social{flex-direction: column}
     .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact{width: 100%;}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact p:last-child{margin-top: 20px}
     .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-social{width: auto; padding: 0}
     .competition-coffee-equipment .cce-content-box .cce-hero-circle h1{width: 90%; font-size: 20px; padding: 0}
     .competition-coffee-equipment .cce-content-box .cce-hero-circle p{padding: 0; font-size: 15px; width: 90%;}
-    .competition-coffee-header{padding: 10px 15px}
+    .competition-coffee-header{padding: 10px 15px; position: absolute; top: 0}
+    .competition-coffee-header .cch-contact-menu .cch-contact p {color: #dab69a;font-size: 12px;padding-right: 10px;font-weight: bold;}
+    .competition-coffee-equipment .cce-content-box h1{text-align: center}
+    .competition-coffee-contact form button {height: 40px; margin-left: auto;margin-right: auto;}
+    /* home page */
+    .competition-coffee-homepage .main-carousel .carousel-cell{flex-direction: column-reverse}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content{width: 100%; padding: 15px; text-align: center}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-image,
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-image--medium,
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy
+    {width: 100%;padding: 0}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content h3{font-size: 15px; padding: 0}
+    .flickity-button{display: none}
+    .competition-coffee-homepage .ccho-content .ccho-content-container h1,
+    .competition-coffee-homepage .ccho-brands h1,
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy h1,
+    .competition-coffee-homepage .ccho-green-solutions h1
+    {font-size: 20px; text-align: center; margin-bottom: 20px;}
+    .competition-coffee-homepage .ccho-content .ccho-content-container h1:after,
+    .competition-coffee-homepage .ccho-green-solutions h1:after
+    {top: 25px}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container{flex-direction: column}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy-steps{width: 100%; padding: 0}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy p strong{font-size: 15px}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy h3{font-size: 20px}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-image--large{width: 100%; padding: 0}
+    .competition-coffee-homepage .ccho-brands-container .ccho-brands-row,.competition-coffee-homepage .ccho-brands-container .ccho-equipment-row,
+    .competition-coffee-homepage .ccho-green-solutions,.competition-coffee-homepage .ccho-content{padding: 0 15px}
+    .competition-coffee-homepage .ccho-brands-container .ccho-brands-row ul li,.competition-coffee-homepage .ccho-brands-container .ccho-equipment-row ul li{flex: 0 33%; padding: 5px}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy p{text-align: justify; font-size: 15px}
+    .competition-coffee-homepage .ccho-green-solutions .ccho-green-solutions-container{flex-direction: column}
+    .competition-coffee-homepage .ccho-green-solutions .ccho-green-solutions-container .ccho-green-solutions-content p{font-size: 15px;}
+    .competition-coffee-homepage .ccho-green-solutions .ccho-green-solutions-container .ccho-green-solutions-content{padding-bottom: 25px;}
+    .competition-coffee-homepage .ccho-green-solutions .ccho-green-solutions-container .ccho-green-solutions-content h3{font-size: 20px}
+    .competition-coffee-homepage .ccho-cta{flex-direction: column-reverse; padding: 0 15px}
+    .competition-coffee-homepage .ccho-cta .ccho-cta-content-container{width: 100%;padding: 15px; text-align: center}
+    .competition-coffee-homepage .ccho-cta .ccho-cta-image{width: 100%;}
+    .competition-coffee-homepage .ccho-cta .ccho-cta-content-container p{font-size: 20px}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info h3{font-size: 25px}
+    .competition-coffee-homepage .ccho-cta .ccho-cta-content-container button{font-size: 20px}
+
 
 }
