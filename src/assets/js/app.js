@@ -8,6 +8,7 @@ app.flickity = function() {
 		cellAlign: 'left',
         autoPlay: true,
         adaptiveHeight: true,
+        
                 
 	});
 };
