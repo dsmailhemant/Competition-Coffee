@@ -73,7 +73,10 @@
 				color: $cc-orange;
 				font-size: 20px;
 				width: 210px;
-
+				a{
+					color: $cc-orange;
+				font-size: 20px;
+				}
 				span {
 					color: white;
 				}

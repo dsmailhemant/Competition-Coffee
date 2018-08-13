@@ -60,13 +60,14 @@
 				}
 			}
 
-			button {
+			a {
 				background-color: $cc-dark-brown;
 				color: white;
 				font-family: $font-serif-bold;
 				font-size: 20px;
 				margin-top: 5%;
 				padding: 1% 2%;
+				text-decoration: none
 			}
 		}
 
@@ -207,13 +208,15 @@
 				line-height: 1.1;
 			}
 
-			button {
+			a {
 				background-color: $cc-green;
 				color: white;
 				font-family: $font-serif-bold;
 				font-size: 30px;
 				margin-top: 5%;
 				padding: 2% 5%;
+				text-decoration: none;
+				display: inline-block
 			}
 		}
 

@@ -108,7 +108,7 @@
   padding: 0;
   font-size: 0.875em;
   list-style: none;
-  overflow: hidden; }
+  overflow: hidden; position: absolute; width: 100%;}
   .slicknav_nav ul {
     list-style: none;
     overflow: hidden;
@@ -125,7 +125,7 @@
       color: #fff; }
   .slicknav_nav a {
     padding: 5px 15px;
-    margin: 2px 0px;
+    margin: 0px;
     color: #fff;
     display: block;
     font-family: 'Klinic Book', serif;
@@ -138,6 +138,7 @@
     justify-content: center;
     display: flex;
    }
+   .slicknav_nav a {border-bottom: 1px solid #fff}
     .slicknav_nav a:hover {
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;

@@ -6,14 +6,17 @@
     .cch-logo-container{max-width: 200px;}
     .cch-logo-container img{max-width: 100%}
     .slicknav_menu .slicknav_icon{margin: 0; width: auto;}
-    .slicknav_btn{position: absolute ; right: 10px; border-radius: 0; width: auto; top:29px; z-index: 9; background-color: #605352; width: 40px; height: 40px;display: flex;
+    .slicknav_btn{position: absolute ; right: 10px; border-radius: 0; width: auto; top:-72px; z-index: 9; background-color: #605352; width: 40px; height: 40px;display: flex;
         align-items: center;
         justify-content: center; padding: 0}
+        
         .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
             margin-top: 0.28em;
         }
         .slicknav_menu .slicknav_icon-bar{width: 30px;}
-    .slicknav_menu{padding: 0}
+    .slicknav_menu{padding: 0; z-index: 99;
+        position: relative;}
+        .slicknav_nav a:hover{background-color: #fff; border-radius: 0}
     .slicknav_nav li{height: 85px; border-radius: 0}
     .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(3) {
         -webkit-transform: rotate(-40deg);
@@ -39,7 +42,13 @@
     .flickity-viewport{height: 750px;}
     .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2){display: none}
     .competition-coffee-equipment .cce-content-box{position: static}
-    .competition-coffee-equipment .cce-content-box .cce-hero-circle{position: static; width: 300px; height: 300px; padding: 0; padding-top: 70px;}
+    .competition-coffee-equipment .cce-content-box .cce-hero-circle{position: absolute; width: 245px; height: 245px; padding: 0; padding-top: 50px; right: 0;
+    top:170px}
+    .competition-coffee-equipment .cce-hero img,.cca-hero img{
+        width: 100%;
+        height: 90%;
+    }
+    .cce-hero,.cca-hero{height: 290px;}
     .competition-coffee-contact form p{width: 100%; margin-top: 15px; text-align: center}
     .competition-coffee-footer .competition-coffee-wrapper{flex-direction: column}
     .competition-coffee-footer .ccf-logo-info{flex-direction: column}
@@ -53,8 +62,8 @@
         .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact p{font-size: 15px}
     .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact p:last-child{margin-top: 20px}
     .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-social{width: 90px; padding: 0; justify-content: center}
-    .competition-coffee-equipment .cce-content-box .cce-hero-circle h1{width: 90%; font-size: 20px; padding: 0}
-    .competition-coffee-equipment .cce-content-box .cce-hero-circle p{padding: 0; font-size: 15px; width: 90%;}
+    .competition-coffee-equipment .cce-content-box .cce-hero-circle h1,.competition-coffee-about .cca-about-content-box h1{width: 90%; font-size: 15px; padding: 0}
+    .competition-coffee-equipment .cce-content-box .cce-hero-circle p{padding: 0; font-size: 12px; width: 90%;}
     .competition-coffee-header{padding: 10px 15px; position: absolute; top: 0}
     .competition-coffee-header .cch-contact-menu .cch-contact p {color: #dab69a;font-size: 12px;padding-right: 10px;font-weight: bold;}
     .competition-coffee-equipment .cce-content-box h1{text-align: center}
@@ -103,26 +112,28 @@
     .competition-coffee-homepage .ccho-brands{padding: 0 15px}
     /* about */
     .competition-coffee-about .cca-about-content-box {
-        bottom:  0;
+        position: static;
         flex-direction: column-reverse;
-        margin-top: 50px;
+        margin-top: 50px; 
     }
     
-    .competition-coffee-about .cca-about-content-box .cca-about-content-image {
-        width:  100%;
+    .competition-coffee-about .cca-about-content-box .cca-about-content-image img{
+        max-width:  100%;
     }
     
     .competition-coffee-about .cca-about-content-box .cca-hero-circle {
         position: absolute;
-        width: 250px;
-        height: 250px;
-        top: -20%;
-        right: 0%;
+        width: 245px;
+        height: 245px;
+        padding: 0;
+        padding-top: 50px;
+        right: 0;
+        top: 170px;
     }
     
     .competition-coffee-about .cca-about-content-box .cca-hero-circle h1 {
         font-size: 15px;
-        padding: 20% 5% 5% 5%;
+        padding: 0; margin: 0
     }
     
     .competition-coffee-about .cca-about-content-box .cca-hero-circle p {
@@ -154,7 +165,7 @@
     
     .competition-coffee-about .cca-our-services .cca-our-services-image {padding-left:  0;width:  100%;}
     
-    .cca-our-services-content {
+    /* .cca-our-services-content {
     }
     
     .cca-our-services-image img {
@@ -163,20 +174,20 @@
     
     .cca-about-content-image img {
         width:  100%;
-    }
+    } */
     
     .competition-coffee-about .cca-about-content-box h1 {
         font-size: 18px;
         padding-left:  20px;
         text-align:  center;
         margin:  0 auto;
-        display:  block;
+        display:  block; margin-bottom: 20px
     }
     
     .competition-coffee-about .cca-about-content-box h1:after {
-        top: 24px;
+        top: initial;
         text-align:  center;
-        width: 100%;
+        width: 100%; bottom: -15px
     }
     
     .competition-coffee-about .cca-about-questions {
@@ -239,6 +250,219 @@
         top: 81px;
     }
 
+    /* coffee */
+
+    .competition-coffee-equipment .cce-content-box .cce-content-container {
+        flex-direction:  column;
+    }
+    
+    .competition-coffee-coffee .cce-content-box .cce-content-container .cce-content-copy p {
+        max-width:  100%;
+    }
+    
+    .competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-copy {
+        width:  100%;
+    }
+    
+    .competition-coffee-equipment .cce-equipment-container {
+        margin-top:  0;
+    }
+    
+    .competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-image {
+        width:  100%;
+    }
+    .competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-image img{max-width: 100%}
+    .competition-coffee-equipment .cce-equipment-container h1 {
+        font-size:  20px;
+        margin-top: 50px;
+        text-align:  center;
+    }
+    
+    .competition-coffee-equipment .cce-equipment-container .cce-equipment-row {
+        flex-direction: row;
+        flex-wrap:  wrap;
+    }
+    
+    
+    .cce-equipment-column.cce-coffee-column {
+        flex: 0 48%;     padding: 10px;
+    }
+    
+    .competition-coffee-equipment .cce-equipment-container:not(:nth-child(3)) {
+        margin-top:  0px;
+    }
+    
+    .competition-coffee-coffee .cce-equipment-container .cce-equipment-row .cce-coffee-column p {
+        font-size: 14px;
+    }
+    
+    .competition-coffee-coffee .cce-coffee .cce-cta-content-container {
+        width:  100%;
+    }
+    
+    .competition-coffee-equipment .cce-cta {
+        flex-direction:  column;
+    }
+    
+    .competition-coffee-coffee .cce-coffee .cce-cta-image {
+        width:  100%;
+    }
+    
+    .competition-coffee-equipment .cce-cta .cce-cta-content-container p {
+        font-size:  18px;
+    }
+    
+    .competition-coffee-equipment .cce-cta .cce-cta-content-container button {
+        margin-bottom:  20px;
+    }
+    
+    
+    .competition-coffee-equipment .cce-equipment-container h1:after {
+        width: 80%;
+        margin:  0 auto;
+        right:  0;
+    }
+ /* equipment */
+ .competition-coffee-equipment .cce-cta .cce-cta-content-container,.competition-coffee-equipment .cce-cta .cce-cta-image{width: 100%;}
+ .competition-coffee-equipment .cce-cta .cce-cta-content-container{padding-bottom: 50px}
+ .competition-coffee-equipment .cce-content-box .cce-content-container {
+    flex-direction:  column;
+}
+
+.competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-copy {
+    width:  100%;
+}
+
+.competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-copy h2 {
+    font-size: 27px;
+    line-height: 33px;
+    padding-top:  20px;
+    padding-bottom:  30px;
+}
+
+.competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-copy p {
+    padding-bottom:  20px; font-size: 15px
+}
+.competition-coffee-equipment .cce-equipment-container .cce-equipment-row .cce-equipment-column .cce-equipment-image-container img{max-width: 100%}
+.competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-copy p strong {
+    padding-bottom: 50px;
+    display:  block;
+}
+
+.competition-coffee-equipment .cce-equipment-container {
+    margin-top: 50px;
+}
+
+.competition-coffee-equipment .cce-equipment-container h1 {
+    text-align:  center;
+    margin-bottom: 50px;
+}
+
+.competition-coffee-equipment .cce-equipment-container h1:after {
+    margin: 0 auto;
+    right:  0;
+    width:  80%;
+}
+
+.competition-coffee-equipment .cce-equipment-container .cce-equipment-row .cce-equipment-column {flex: 0 48%; height: auto; max-height: 250px;justify-content: center}
+
+.competition-coffee-equipment .cce-equipment-container .cce-equipment-row .cce-equipment-column .cce-equipment-image-container {
+    flex: 0 48%;
+}
+
+.competition-coffee-equipment .cce-equipment-container .cce-equipment-row {
+    flex-wrap:  wrap;
+    flex-direction: row;
+}
+
+.competition-coffee-equipment .cce-equipment-container .cce-equipment-row .cce-equipment-column p {
+    font-size: 15px; margin-top: 15px
+}
+.competition-coffee-equipment .cce-content-box .cce-hero-circle a{margin-top: 15px; padding: 3% 5%; font-size: 15px; width: 100%;max-width: 100px}
+/* snacks */
+.cca-snacks-content-container {
+    flex-direction:  column; margin-top: 20px
+}
+
+
+
+.competition-coffee-about .cca-about-content-box .cca-about-content-copy {
+    width:  100%;
+}
+
+.competition-coffee-about .cca-about-content-box .cca-about-content-image {
+    width:  100%;
+    margin-top:  20px;
+    margin-bottom:  30px;
+}
+
+.competition-coffee-about .cca-about-content-box-flex {
+    flex-direction: column-reverse;
+}
+.competition-snacks-wrapper .cca-about-content-copy h1 {
+    margin-bottom: 20px;
+}
+
+.competition-coffee-about .cca-about-content-box .cca-about-content-copy p {
+    padding: 20px;
+    display:  block;
+    padding-bottom: 30px;
+}
+
+.competition-coffee-snacks .cce-equipment-container h1 {
+    text-align:  center;
+    font-size:  20px;
+}
+
+.competition-coffee-snacks .cce-equipment-container h1:after {
+    width:  80%;
+    right:  0;
+    margin:  0 auto;
+}
+
+.competition-coffee-snacks .cce-equipment-container .cce-equipment-row {flex-direction: row;flex-wrap: wrap;}
+
+.competition-coffee-snacks .cce-equipment-container .cce-equipment-row .cce-equipment-column {
+    flex: 0 48%;
+    padding: 13px;
+}
+
+.competition-coffee-snacks .cce-equipment-container .cce-equipment-row .cce-equipment-column .cce-equipment-image-container {
+    height:  auto;
+}
+
+.competition-coffee-equipment .cce-equipment-container:not(:nth-child(3)) {
+    margin-top:  0;
+}
+
+.competition-coffee-snacks .cca-snacks-content-box {
+    flex-direction:  column; padding: 35px 0 0
+}
+.cca-snacks-content-box h1{margin-bottom: 20px!important}
+.competition-coffee-about .cca-about-content-box .cca-about-content-copy p {
+    padding: 4px;
+}
+
+.competition-coffee-snacks .competition-snacks-wrapper {
+    flex-direction: column-reverse;     padding: 35px 15px;
+}
+
+.cca-our-services-image img {
+    width:  100%;
+}
+
+.competition-coffee-about .cca-our-services .cca-our-services-image {
+    width:  100%;
+}
+
+.competition-snacks-wrapper .cca-our-services-content {
+    width:  100%;
+    padding-top:  30px;
+}
+
+.competition-snacks-wrapper .cca-our-services-content p {
+    margin-top:  20px;
+}
 
 }
 
@@ -281,22 +505,27 @@
         .competition-coffee-about .cca-about-content-box .cca-hero-circle p strong {
             font-size: 16px;
         }
-        
-        .cca-about-content-image img {
-            width:  100%;
+        .competition-coffee-snacks .cce-equipment-container .cce-equipment-row .cce-coffee-column {
+            height: auto;
+            flex: 0 23%;
         }
-        
+        .competition-coffee-snacks .cce-equipment-container{margin-top: 20px!important}
         .competition-coffee-about .cca-about-content-box .cca-about-content-copy p {
-            font-size: 15px;
+            font-size: 18px;
         }
-        
+        .competition-coffee-snacks .cce-equipment-container .cce-equipment-row .cce-equipment-column .cce-equipment-image-container{height: 200px;}
         .cca-our-services-image img {
             width:  100%;
         }
         
         .competition-coffee-about .cca-our-services {
-            margin-bottom: 48%;
-            margin-top: -274px;
+            margin: 0
+        }
+        .cca-our-services-content{width: 55%; padding-left: 15px}
+        .competition-coffee-about .cca-our-services ul li{font-size: 18px}
+        .competition-coffee-about .cca-about-questions{margin: 0 auto;}
+        .competition-coffee-snacks .cca-snacks-content-box {
+            margin-top: 10%;
         }
         
         .competition-coffee-about .cca-about-content-box h1 {
@@ -308,19 +537,62 @@
         }
         
         .competition-coffee-about .cca-cta .cca-cta-content-container {
-            padding: 14% 2% 0 7%;
+            padding: 10% 2% 0 5%;
         }
-        
+        .competition-coffee-about .cca-cta .cca-cta-content-container p{font-size: 20px}
         .competition-coffee-about .cca-cta .cca-cta-content-container button {
             margin-bottom:  20px;
         }
-  
+  /* equipment */
+  .cce-content-image img {
+    width:  100%;
+}
+
+.competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-copy {
+    padding-right:  20px;
+}
+
+.competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-copy h2 {
+    font-size:  25px;
+}
+
+.competition-coffee-equipment .cce-content-box .cce-content-container .cce-content-copy p strong {
+    font-size: 14px;
+}
+
+.competition-coffee-equipment .cce-equipment-container .cce-equipment-row .cce-equipment-column .cce-equipment-image-container img {
+    max-width:  100%;
+}
+
+.competition-coffee-equipment .cce-equipment-container .cce-equipment-row .cce-equipment-column p {
+    font-size: 15px;
+}
+.competition-coffee-equipment .cce-content-box{bottom: 30px}
+.cca-about-content-box{bottom: 30px!important}
+.cce-content-box .cce-hero-circle,.competition-coffee-about .cca-about-content-box .cca-hero-circle{width: 350px!important; height: 350px!important; top: -285px!important}
+    .competition-coffee-about .cca-about-content-box .cca-hero-circle h1,.competition-coffee-equipment .cce-content-box .cce-hero-circle h1{font-size: 20px!important}
+    .cca-about-content-image img{max-width: 100%;}
+    .competition-coffee-equipment .cce-equipment-container{margin: 0; padding: 0 15px}
+    .competition-coffee-equipment .cce-equipment-container .cce-equipment-row .cce-equipment-column{padding: 10px;}
 }
 @media(min-width: 1024px) and (max-width: 1199px){
     .competition-coffee-header{padding: 2% 15px}
-    .competition-coffee-homepage .ccho-cta .ccho-cta-content-container{padding: 5% 15px}
+    .competition-coffee-homepage .ccho-cta .ccho-cta-content-container{padding: 10% 2% 5% 5%;}
     .competition-coffee-footer{padding: 2% 15px}
     .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info p{padding: 2% 10% 0 0}
     .competition-coffee-homepage .ccho-green-solutions{padding: 0 15px}
     .competition-coffee-homepage .ccho-content .ccho-content-container{padding: 5% 15px}
+    .cce-content-box .cce-hero-circle,.competition-coffee-about .cca-about-content-box .cca-hero-circle{width: 350px!important; height: 350px!important; top: -275px!important}
+    .competition-coffee-about .cca-about-content-box .cca-hero-circle h1,.competition-coffee-equipment .cce-content-box .cce-hero-circle h1{font-size: 20px!important}
+    .competition-coffee-about .cca-cta .cca-cta-content-container {
+        background-color: #f3e7de;
+        padding: 10% 2% 0 5%;}
+        .competition-coffee-equipment .cce-hero img{height: auto; width: auto; max-width: 100%}
+        .competition-coffee-equipment .cce-content-box{bottom: 35px}
+        .competition-coffee-equipment .cce-equipment-container{margin:auto;}
+        .competition-coffee-equipment .cce-cta .cce-cta-content-container {
+            background-color: #f3e7de;
+            padding: 10% 2% 5% 5%;
+            width: 40%;
+        }
 }

@@ -18,7 +18,20 @@ app.init = function(){
 };
 
 $(function(){
-	app.init();
+    app.init();
+     var href=window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
+     if(href!=''){
+        $('#menu').find('ul li>a').each(function(){
+           
+            var gethref=$(this).attr('href').replace('/','');
+            if(href==gethref) {
+                    $(this).addClass('active');
+                    return false;
+                }
+        })
+    }
+    else
+        $('#menu').find('ul li>a:eq(0)').addClass('active');
 });
 
 

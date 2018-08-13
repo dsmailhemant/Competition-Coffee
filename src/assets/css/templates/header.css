@@ -43,7 +43,7 @@
 					top: 6px;
 					transition: padding 0.3s ease-in;
 
-					&:before {
+					&:before{
 						background-color: $cc-brown;
 						bottom: 1px;
 						content: '';
@@ -66,6 +66,25 @@
 						transform: scale(1,1);
 						transform-origin: left top;
 					}
+				}
+				a.active {
+						&:before{
+						background-color: $cc-brown;
+						bottom: 1px;
+						content: '';
+						display: block;
+						height: 2px;
+						left: 0px;
+						position: absolute;						
+						width: 100%;
+						
+					}
+
+					&:before{
+						transform: none
+					}
+
+					
 				}
 			}
 		}
