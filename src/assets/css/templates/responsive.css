@@ -1,49 +1,92 @@
 @media (min-width: 320px)and (max-width: 767px) {
-    .cch-logo-container{max-width: 150px;}
+    /* menu bar */
+    .competition-coffee-header{height: 100px; justify-content: center; align-items: center}
+    .slicknav_menu .slicknav_menutxt{display: none}
+    .cch-contact {  display: none!important; }
+    .cch-logo-container{max-width: 200px;}
     .cch-logo-container img{max-width: 100%}
+    .slicknav_menu .slicknav_icon{margin: 0; width: auto;}
+    .slicknav_btn{position: absolute ; right: 10px; border-radius: 0; width: auto; top:29px; z-index: 9; background-color: #605352; width: 40px; height: 40px;display: flex;
+        align-items: center;
+        justify-content: center; padding: 0}
+        .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+            margin-top: 0.28em;
+        }
+        .slicknav_menu .slicknav_icon-bar{width: 30px;}
+    .slicknav_menu{padding: 0}
+    .slicknav_nav li{height: 85px; border-radius: 0}
+    .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(3) {
+        -webkit-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 15px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        left: 5px;
+    }
+    .slicknav_menu .slicknav_open .slicknav_icon-bar:first-child {
+        -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 20px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        left: 5px;
+    }
+    .flickity-page-dots{display: none}
+    .flickity-viewport{height: 750px;}
+    .slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2){display: none}
     .competition-coffee-equipment .cce-content-box{position: static}
     .competition-coffee-equipment .cce-content-box .cce-hero-circle{position: static; width: 300px; height: 300px; padding: 0; padding-top: 70px;}
     .competition-coffee-contact form p{width: 100%; margin-top: 15px; text-align: center}
     .competition-coffee-footer .competition-coffee-wrapper{flex-direction: column}
     .competition-coffee-footer .ccf-logo-info{flex-direction: column}
-    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info p{padding: 0}
-    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info{position: static; margin-bottom: 20px;}
-    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content button{font-size: 20px}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info p{padding: 0; font-size: 15px}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info{margin-bottom: 20px;text-align: left; width: 80%;}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content button{font-size: 20px; text-transform: uppercase}
     .competition-coffee-footer{padding: 15px; text-align: center}
-    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social{flex-direction: column}
-    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact{width: 100%;}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social{flex-direction: row}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact{width: 80%;
+        text-align: left;}
+        .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact p{font-size: 15px}
     .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-contact p:last-child{margin-top: 20px}
-    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-social{width: auto; padding: 0}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-social{width: 90px; padding: 0; justify-content: center}
     .competition-coffee-equipment .cce-content-box .cce-hero-circle h1{width: 90%; font-size: 20px; padding: 0}
     .competition-coffee-equipment .cce-content-box .cce-hero-circle p{padding: 0; font-size: 15px; width: 90%;}
     .competition-coffee-header{padding: 10px 15px; position: absolute; top: 0}
     .competition-coffee-header .cch-contact-menu .cch-contact p {color: #dab69a;font-size: 12px;padding-right: 10px;font-weight: bold;}
     .competition-coffee-equipment .cce-content-box h1{text-align: center}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social .ccf-social a{height: 25px; width: 25px; font-size: 15px}
     .competition-coffee-contact form button {height: 40px; margin-left: auto;margin-right: auto;}
     /* home page */
     .competition-coffee-homepage .main-carousel .carousel-cell{flex-direction: column-reverse}
-    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content{width: 100%; padding: 15px; text-align: center}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content{width: 100%; padding: 35px 15px; text-align: center}
     .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-image,
     .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-image--medium,
     .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy
-    {width: 100%;padding: 0}
+    {width: 100%;padding:35px 0 35px}
     .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content h3{font-size: 15px; padding: 0}
     .flickity-button{display: none}
     .competition-coffee-homepage .ccho-content .ccho-content-container h1,
     .competition-coffee-homepage .ccho-brands h1,
     .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy h1,
     .competition-coffee-homepage .ccho-green-solutions h1
-    {font-size: 15px; text-align: center; margin-bottom: 20px;}
+    {font-size: 22px; text-align: center; margin-bottom: 20px;     padding-top: 40px;}
     .competition-coffee-homepage .ccho-content .ccho-content-container h1:after,
     .competition-coffee-homepage .ccho-green-solutions h1:after
     {top: 25px}
-    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container{flex-direction: column}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info{flex-direction: row}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info img{width: 75px;}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container{flex-direction: column-reverse}
     .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy-steps{width: 100%; padding: 0}
     .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy p strong{font-size: 15px}
     .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy h3{font-size: 20px}
     .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-image--large{width: 100%; padding: 0}
     .competition-coffee-homepage .ccho-brands-container .ccho-brands-row,.competition-coffee-homepage .ccho-brands-container .ccho-equipment-row,
     .competition-coffee-homepage .ccho-green-solutions,.competition-coffee-homepage .ccho-content{padding: 0 15px}
+    .competition-coffee-homepage .ccho-green-solutions{padding-top: 35px;}
     .competition-coffee-homepage .ccho-brands-container .ccho-brands-row ul li,.competition-coffee-homepage .ccho-brands-container .ccho-equipment-row ul li{flex: 0 33%; padding: 5px}
     .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy p{text-align: justify; font-size: 15px}
     .competition-coffee-homepage .ccho-green-solutions .ccho-green-solutions-container{flex-direction: column}
@@ -54,10 +97,147 @@
     .competition-coffee-homepage .ccho-cta .ccho-cta-content-container{width: 100%;padding: 15px; text-align: center}
     .competition-coffee-homepage .ccho-cta .ccho-cta-image{width: 100%;}
     .competition-coffee-homepage .ccho-cta .ccho-cta-content-container p{font-size: 20px}
-    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info h3{font-size: 25px}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info h3{font-size: 18px; text-align: left}
     .competition-coffee-homepage .ccho-cta .ccho-cta-content-container button{font-size: 20px}
     .competition-coffee-homepage .ccho-content .ccho-content-container{padding: 0}
     .competition-coffee-homepage .ccho-brands{padding: 0 15px}
+    /* about */
+    .competition-coffee-about .cca-about-content-box {
+        bottom:  0;
+        flex-direction: column-reverse;
+        margin-top: 50px;
+    }
+    
+    .competition-coffee-about .cca-about-content-box .cca-about-content-image {
+        width:  100%;
+    }
+    
+    .competition-coffee-about .cca-about-content-box .cca-hero-circle {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        top: -20%;
+        right: 0%;
+    }
+    
+    .competition-coffee-about .cca-about-content-box .cca-hero-circle h1 {
+        font-size: 15px;
+        padding: 20% 5% 5% 5%;
+    }
+    
+    .competition-coffee-about .cca-about-content-box .cca-hero-circle p {
+        font-size: 12px;
+    }
+    
+    .competition-coffee-about .cca-about-content-box .cca-about-content-container {
+        flex-direction:  column;
+        padding-left: 20px;
+    }
+    
+    .competition-coffee-about .cca-about-content-box .cca-about-content-copy {
+        width:  100%;
+    }
+    
+    .competition-coffee-about .cca-about-content-box h1 {
+        font-size: 27px;
+    }
+    
+    .competition-coffee-about .cca-our-services {
+        margin:  0;
+        flex-direction: column-reverse;
+    }
+    
+    .cca-our-services-content {
+        padding-left: 0;
+        padding-top: 30px;
+    }
+    
+    .competition-coffee-about .cca-our-services .cca-our-services-image {padding-left:  0;width:  100%;}
+    
+    .cca-our-services-content {
+    }
+    
+    .cca-our-services-image img {
+        width:  100%;
+    }
+    
+    .cca-about-content-image img {
+        width:  100%;
+    }
+    
+    .competition-coffee-about .cca-about-content-box h1 {
+        font-size: 18px;
+        padding-left:  20px;
+        text-align:  center;
+        margin:  0 auto;
+        display:  block;
+    }
+    
+    .competition-coffee-about .cca-about-content-box h1:after {
+        top: 24px;
+        text-align:  center;
+        width: 100%;
+    }
+    
+    .competition-coffee-about .cca-about-questions {
+        margin:  0;
+    }
+    
+    .competition-coffee-about .cca-about-questions ol {
+        padding-left: 20px;
+        padding-top:  20px;
+    }
+    
+    .competition-coffee-about .cca-about-questions h1 {
+        font-size: 20px;
+        padding-top:  30px;
+    }
+    
+    .competition-coffee-about .cca-about-questions ol li {font-size:  17px;line-height: 30px;}
+    
+    .competition-coffee-about .cca-cta {
+        flex-direction:  column;
+    }
+    
+    .competition-coffee-about .cca-cta .cca-cta-content-container {
+        width:  100%;
+        padding: 7% 3% 22px 14%;
+    }
+    
+    .competition-coffee-about .cca-cta .cca-cta-image {
+        width:  100%;
+    }
+    
+    .competition-coffee-about .cca-cta .cca-cta-content-container p {
+        font-size: 20px;
+    }
+    
+    .competition-coffee-about .cca-about-content-box .cca-about-content-copy p {
+        font-size: 15px;
+    }
+    
+    .competition-coffee-about .cca-our-services ul li {
+        font-size:  16px;
+    }
+    
+    .competition-coffee-about .cca-our-services ul {
+        padding:  0;
+        margin:  0;
+        padding-right:  20px;
+        padding-left: 25px;
+        margin-top:  20px;
+        margin-bottom: 30px;
+    }
+    
+    .competition-coffee-about .cca-our-services h1 {
+        display:  block;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .competition-coffee-about .cca-about-questions h1:after {
+        top: 81px;
+    }
 
 
 }
@@ -65,4 +245,82 @@
 
 @media(min-width: 768px) and (max-width: 1023px){
     .competition-coffee-header{padding: 2% 15px}
+    .competition-coffee-header .cch-contact-menu .cch-menu ul{width: 450px;}
+    .competition-coffee-header .cch-contact-menu .cch-menu ul a{font-size: 18px; top: 2px}
+    .cch-logo-container { max-width: 200px; }
+    .cch-logo-container img {max-width: 100%;}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content{padding: 5% 5% 5% 8%}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content h3{font-size: 25px}
+    .competition-coffee-homepage .main-carousel .carousel-cell .ccho-carousel-content button{margin-top: 15%}
+    .competition-coffee-homepage .ccho-content .ccho-content-container{padding: 5% 15px}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy p{font-size: 15px}
+    .competition-coffee-homepage .ccho-content .ccho-content-container .ccho-content-copy-container .ccho-content-copy h3{font-size: 22px}
+    .competition-coffee-homepage .ccho-brands h1{font-size: 25px}
+    .competition-coffee-homepage .ccho-green-solutions .ccho-green-solutions-container .ccho-green-solutions-content p{font-size: 15px}
+    .competition-coffee-homepage .ccho-green-solutions .ccho-green-solutions-container .ccho-green-solutions-content h3{    font-size: 18px;
+        margin: 8% 0 2% 0;     min-height: 35px;}
+        .competition-coffee-homepage .ccho-cta .ccho-cta-content-container { background-color: #f3e7de; padding: 2% 2% 2% 5%; width: 50%;}
+        .competition-coffee-homepage .ccho-cta .ccho-cta-content-container p{font-size: 20px}
+        .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info p{padding: 2% 10% 0 0}
+        .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info{width: 60%;}
+        .competition-coffee-footer .competition-coffee-wrapper .ccf-contact-social{width: 40%;}
+        .competition-coffee-footer{padding: 2% 15px}
+        /* about */
+
+        .competition-coffee-about .cca-about-content-box .cca-hero-circle {
+            top: -187px;
+            width:  300px;
+            height:  300px;
+        }
+        
+        .competition-coffee-about .cca-about-content-box .cca-hero-circle h1 {
+            font-size: 16px;
+            padding: 22% 5% 3% 5%;
+        }
+        
+        .competition-coffee-about .cca-about-content-box .cca-hero-circle p strong {
+            font-size: 16px;
+        }
+        
+        .cca-about-content-image img {
+            width:  100%;
+        }
+        
+        .competition-coffee-about .cca-about-content-box .cca-about-content-copy p {
+            font-size: 15px;
+        }
+        
+        .cca-our-services-image img {
+            width:  100%;
+        }
+        
+        .competition-coffee-about .cca-our-services {
+            margin-bottom: 48%;
+            margin-top: -274px;
+        }
+        
+        .competition-coffee-about .cca-about-content-box h1 {
+            font-size:  20px;
+        }
+        
+        .competition-coffee-about .cca-about-content-box h1:after {
+            top: 27px;
+        }
+        
+        .competition-coffee-about .cca-cta .cca-cta-content-container {
+            padding: 14% 2% 0 7%;
+        }
+        
+        .competition-coffee-about .cca-cta .cca-cta-content-container button {
+            margin-bottom:  20px;
+        }
+  
+}
+@media(min-width: 1024px) and (max-width: 1199px){
+    .competition-coffee-header{padding: 2% 15px}
+    .competition-coffee-homepage .ccho-cta .ccho-cta-content-container{padding: 5% 15px}
+    .competition-coffee-footer{padding: 2% 15px}
+    .competition-coffee-footer .competition-coffee-wrapper .ccf-logo-info .ccf-info p{padding: 2% 10% 0 0}
+    .competition-coffee-homepage .ccho-green-solutions{padding: 0 15px}
+    .competition-coffee-homepage .ccho-content .ccho-content-container{padding: 5% 15px}
 }
