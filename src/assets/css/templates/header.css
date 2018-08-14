@@ -45,7 +45,7 @@
 
 					&:before{
 						background-color: $cc-brown;
-						bottom: 1px;
+						bottom: -5px;
 						content: '';
 						display: block;
 						height: 2px;
@@ -70,7 +70,7 @@
 				a.active {
 						&:before{
 						background-color: $cc-brown;
-						bottom: 1px;
+						bottom: -5px;
 						content: '';
 						display: block;
 						height: 2px;

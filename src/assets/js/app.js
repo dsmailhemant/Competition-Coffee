@@ -3,14 +3,16 @@ var app = {};
 app.flickity = function() {
 	$('.main-carousel').flickity({
 		imagesLoaded: true,
-		percentPosition: false,
+		percentPosition: true,
 		resize: true,
 		cellAlign: 'left',
         autoPlay: true,
-        adaptiveHeight: true,
+        prevNextButtons: false,
+        pageDots: false,
+        wrapAround: true
         
                 
-	});
+    });
 };
 
 app.init = function(){
@@ -32,8 +34,38 @@ $(function(){
     }
     else
         $('#menu').find('ul li>a:eq(0)').addClass('active');
-});
 
+   $('.chkcontact').click(function(e){
+       $('.interested').find('div.squaredOne').css('border',($('.interested').find('input[type="checkbox"]:checked').length>0)?'1px solid #756a69':'1.5px solid #ff0024');
+       var chk=TextBoxValidation('.contactform');
+       if(chk=false)
+          return false;
+
+       e.stopPropagation();
+   })
+    
+
+});
+function TextBoxValidation(obj) {
+    var check = true;
+    $(obj).find('input[type=text],input[type=password],input[type=email],input[type=file],textarea,select').each(function () {
+        
+		var c = $(this).attr('required');
+		var v = $(this).val().trim();  
+		if (c == 'required' && v == '') {
+            $(this).addClass("error");
+        	//($(this).closest("div").find('p.error').length>0)?"":$(this).closest("div").append('<p class="error text-danger">This field is required.</p>');
+            check = false;
+        }
+        else{
+            if(!$(this).hasClass('more_error')){            
+                $(this).removeClass("error");
+                //$(this).closest("div").find('p.error').remove();
+            }
+        }
+    });
+    return check;
+}
 
 /*!
  * SlickNav Responsive Mobile Menu v1.0.10

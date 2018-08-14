@@ -27,7 +27,7 @@
 			height: 500px;
 			position: absolute;
 			right: 2%;
-			top: -48%;
+			top: -400px;
 			width: 500px;
 			z-index: 10;
 
@@ -67,7 +67,10 @@
 				font-size: 20px;
 				margin-top: 5%;
 				padding: 1% 2%;
-				text-decoration: none
+				text-decoration: none;
+				width: 135px;
+				height: 32px;
+				text-align: center;
 			}
 		}
 
@@ -138,7 +141,7 @@
 				height: 3px;
 				left: 0px;
 				position: absolute;
-				top: 30px;
+				top: 40px;
 				width: 100%;
 			}
 		}
@@ -191,7 +194,7 @@
 				height: 3px;
 				left: 0px;
 				position: absolute;
-				top: 30px;
+				top: 40px;
 				width: 100%;
 			}
 		}
@@ -215,8 +218,8 @@
 
 		.cca-cta-content-container {
 			background-color: $cc-beige;
-			padding: 14% 2% 0 20%;
-			width: 40%;
+			padding: 10% 2% 0 12%;
+			width: 45%;
 
 			p {
 				color: $cc-dark-brown;
@@ -238,7 +241,7 @@
 		}
 
 		.cca-cta-image {
-			width: 60%;
+			width: 55%;
 
 			img {
 				height: 100%;
@@ -247,3 +250,5 @@
 		}
 	}
 }
+
+.cca-about-content-box.cca-about-content-box-flex.competition-coffee-wrapper.filtered-water{margin-top: 22rem}
