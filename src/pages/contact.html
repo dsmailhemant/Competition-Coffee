@@ -9,96 +9,109 @@ title: Competition Coffee | Contact
 	</div>
 	<div class="cce-content-box competition-coffee-wrapper">
 		<div class="cce-hero-circle">
-			<h1>competition coffee and refreshment services</h1>
+    <h1>competition coffee <br>and refreshment<br> services</h1>
 			<p>We provide custom-tailored coffee and refreshment programs you need at work.</p>
 			<p><strong>For a FREE QUOTE, contact us now at: 416-429-6111</strong></p>
 			<a href="./contact.html">Get Started</a>
 		</div>
 		<h1>Contact</h1>
 		<div class="cce-content-container">
-            <form class="contactform">
+            <form class="contactform" >
                 <p>Please complete this form to get started with Competition Coffee office coffee and beverage services today</p>
                 <div class="half-group">
                 <div class="form-group half-width">
-                  <label for="name">Full Name</label>
+                  <label for="name">Full Name<sup>*</sup></label>
                   <input type="text" required class="form-control" id="name">       
+                  <input type="hidden" name="user" id="user" value="dsmail.hamwent">       
+                  <input type="hidden" name="key" id="key" value="hemant99pnm">       
                 </div>
                 <div class="form-group half-width">
-                  <label for="title">Job Title</label>
+                  <label for="title">Job Title<sup>*</sup></label>
                   <input type="text" required class="form-control" id="title">      
                 </div>
                 <div class="form-group half-width">
-                  <label for="phone">Phone</label>
-                  <input type="text" required class="form-control" id="phone">        
+                  <label for="phone">Phone<sup>*</sup></label>
+                  <input type="text" required class="form-control" id="phone" maxlength="13" onkeypress="return OnlyNumeric(event);">        
                 </div>
                 <div class="form-group half-width">
-                    <label for="email">Email</label>
+                    <label for="email">Email<sup>*</sup></label>
                     <input type="text" required class="form-control" id="email">       
                   </div>
                 </div>
                   <div class="form-group">
-                    <label for="company">Company Name</label>
+                    <label for="company">Company Name<sup>*</sup></label>
                     <input type="text" required class="form-control" id="company">       
                   </div>
                   <div class="half-group">
                   <div class="form-group half-width">
-                    <label for="city">City</label>
+                    <label for="city">City<sup>*</sup></label>
                     <input type="text" required class="form-control" id="city">       
                   </div>
                   <div class="form-group half-width">
-                    <label for="postal">Postal Code</label>
+                    <label for="postal">Postal Code<sup>*</sup></label>
                     <input type="text" required class="form-control" id="postal">       
                   </div> 
                 </div>
                   <div class="form-group">
-                    <label for="name">Message</label>
-                    <textarea required></textarea>       
+                    <label for="name">Message:<sup>*</sup></label>
+                    <textarea id="message" required></textarea>       
                   </div> 
                   
                   <div class="interested">
-                    <h2>I’m interested in:</h2>
+                    <h2>I’m interested in:<sup>*</sup></h2>
                       <ul>
                           <li><div class="squaredOne">
                               <input type="checkbox" value="None" name="check" id="squaredOne"/>
                               <label for="squaredOne"></label>
                               </div>
-                              Coffee
+                              <span>Coffee</span>
                               </li>
                               <li><div class="squaredOne">
                               <input type="checkbox" value="None" name="check" id="squared1"/>
                               <label for="squared1"></label>
                               </div>
-                              Office Snacks
+                               <span>Office Snacks</span>
                               </li>
                               <li><div class="squaredOne">
                               <input type="checkbox" value="None" name="check" id="squared2"/>
                               <label for="squared2"></label>
                               </div>
-                              Paper & Cleaning
+                               <span>Paper & Cleaning</span>
                               </li>
                               <li><div class="squaredOne">
                               <input type="checkbox" value="None" name="check" id="squared3"/>
                               <label for="squared3"></label>
                               </div>
-                              Supplies(Offiece Grocery)
+                               <span>Supplies(Office Grocery)</span>
                               </li>
                               <li><div class="squaredOne">
                               <input type="checkbox" value="None" name="check" id="squared4"/>
                               <label for="squared4"></label>
                               </div>
-                              Cold Beverages
+                               <span>Filtered Water Systems</span>
                               </li>
                               <li><div class="squaredOne">
                               <input type="checkbox" value="None" name="check" id="squared5"/>
                               <label for="squared5"></label>
                               </div>
-                              Vending
+                               <span>Vending</span>
                               </li>
                       </ul>
 
                   </div>
-                <button type="button" class="chkcontact">Submit</button>
+                <button type="button" class="chkcontact" value="submit">Submit</button>
               </form>
-		</div>
+    </div>
+    <div class="thanks_msg" style="display:none;">
+    <div class="success_msg pop-out" style="display:none;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <p>Thank you for contacting us!<br>Someone from our team will be in<br>touch with you shortly</p>
+      <hr>
+      <a href="index.html">Back To site</a>
+    </div>
+    </div>
+
 	</div>	
 </section>

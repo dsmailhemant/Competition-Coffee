@@ -23,11 +23,11 @@
 			border-radius: 50%;
 			display: flex;
 			flex-direction: column;
-			height: 500px;
+			height: 468px;
 			position: absolute;
 			right: 2%;
 			top: -400px;
-			width: 500px;
+			width: 468px;
 			z-index: 10;
 
 			h1 {
@@ -164,8 +164,8 @@
 				align-items: center;
 				display: flex;
 				flex-direction: column;
-				height: 400px;
-				justify-content: space-between;
+				height:300px;
+				justify-content: flex-start;
 
 				.cce-equipment-image-container {
 					display: flex;
@@ -182,6 +182,8 @@
 				p {
 					text-align: center;
 					text-transform: uppercase;
+					font-size: 20px;
+					margin-top: 20px;
 				}
 			}
 
@@ -197,11 +199,11 @@
 
 	.cce-cta {
 		display: flex;
-		padding-top: 5%;
+		padding-top: 10%;
 
 		.cce-cta-content-container {
 			background-color: $cc-beige;
-			padding: 10% 2% 0 12%;
+			    padding: 7% 2% 7% 12%;
 			width: 45%;
 
 			p {
@@ -212,23 +214,33 @@
 			}
 
 			a {
-				background-color: $cc-green;
+				background-color: #88c392;
 				color: white;
-				font-family: $font-serif-bold;
-				font-size: 30px;
-				margin-top: 5%;
+				font-family: 'Klinic Bold', serif;
+				font-size: 1.875rem;
+				margin-top: 60px;
 				padding: 2% 5%;
 				text-decoration: none;
-				display: inline-block
+				display: inline-block;
+				width: 245px;
+				height: 53px;
+				text-align: center;
 			}
 		}
 
 		.cce-cta-image {
-			width: 55%;
+			width: 55%; position: relative;  overflow: hidden;
 
 			img {
 				height: 100%;
 				width: 100%;
+				display:block;
+				position: absolute;
+				float: left;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
 			}
 		}
 	}

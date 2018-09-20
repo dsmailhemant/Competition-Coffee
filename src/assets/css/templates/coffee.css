@@ -15,9 +15,10 @@
       height: auto;
       .cce-coffee-image-container {
         align-items: center;
+        height: 200px;
         img {
           height: auto;
-          max-width: 100%;
+          max-width: 175px;
         }
       }
       p {

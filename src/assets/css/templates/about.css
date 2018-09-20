@@ -24,11 +24,11 @@
 			border-radius: 50%;
 			display: flex;
 			flex-direction: column;
-			height: 500px;
+			height: 468px;
 			position: absolute;
 			right: 2%;
 			top: -400px;
-			width: 500px;
+			width: 468px;
 			z-index: 10;
 
 			h1 {
@@ -37,6 +37,7 @@
 				line-height: 1.3;
 				padding: 25% 5% 3% 5%;
 				text-align: center;
+				width: 100%;
 
 				&:after {
 					border: none;
@@ -50,9 +51,14 @@
 				font-size: 20px;
 				padding: 0 10%;
 				text-align: center;
+				width: 100%;
 
 				strong {
 					font-family: $font-serif-bold;
+				}
+				a{
+					color: white;
+					background: transparent
 				}
 
 				&:nth-child(3) {
@@ -99,7 +105,7 @@
 		}
 
 		.cca-about-content-copy {
-			width: 60%;
+			width: 60%; padding-right: 15px;
 
 			p {
 				color: $cc-brown;
@@ -107,6 +113,17 @@
 				font-size: 20px;
 				line-height: 1.3;
 				padding-bottom: 3%;
+			}
+			a{
+				background-color: #88c392;
+				color: white;			
+				font-family: 'Klinic Bold', serif;	
+				font-size: 1.5rem;
+				margin-top: 10px;
+				padding: 2% 5%;
+				text-decoration: none;
+				display: inline-block;				
+				text-align: center;
 			}
 		}
 
@@ -132,7 +149,7 @@
 			display: inline-block;
 			font-family: $font-sans-serif;
 			font-size: 30px;
-			padding-bottom: 5%;
+			margin-bottom: 5%;
 			position: relative;
 
 			&:after {
@@ -141,8 +158,9 @@
 				height: 3px;
 				left: 0px;
 				position: absolute;
-				top: 40px;
+				top: initial!important;
 				width: 100%;
+				bottom: -10px
 			}
 		}
 
@@ -155,7 +173,7 @@
 				font-family: $font-serif;
 				font-size: 20px;
 				line-height: 1.3;
-				text-indent: 1em;
+				/* text-indent: 1em; */
 			}
 		}
 	}
@@ -218,7 +236,7 @@
 
 		.cca-cta-content-container {
 			background-color: $cc-beige;
-			padding: 10% 2% 0 12%;
+			    padding: 7% 2% 7% 12%;
 			width: 45%;
 
 			p {
@@ -233,19 +251,30 @@
 				color: white;
 				font-family: $font-serif-bold;
 				font-size: 30px;
-				margin-top: 5%;
+				margin-top:60px;
 				padding: 2% 5%;
 				text-decoration: none;
 				display: inline-block;
+				width: 245px;
+				height: 53px;
+				text-align: center;
 			}
 		}
 
 		.cca-cta-image {
-			width: 55%;
+			width: 55%; position: relative;  overflow: hidden;
 
 			img {
 				height: 100%;
 				width: 100%;
+				display:block;
+				position: absolute;
+				float: left;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+
 			}
 		}
 	}

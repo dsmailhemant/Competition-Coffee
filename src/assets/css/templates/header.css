@@ -1,3 +1,8 @@
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: block;
+}
 .competition-coffee-header {
 	display: flex;
 	justify-content: space-between;
@@ -17,8 +22,14 @@
 				color: $cc-orange;
 				font-size: 20px;
 				padding-right: 15px;
+				a{
+					color: $cc-orange;
+					text-decoration: none
+				}
 			}
-
+			p:last-child{
+				padding-right: 0
+			}
 			i {
 				color: $cc-brown;
 				font-size: 20px;
@@ -30,17 +41,16 @@
 			ul {
 				display: flex;
 				justify-content: space-between;
-				width: 600px;
+				width: 600px; margin-top: 5px;
 
 				a {
 					color: $cc-brown;
 					display: block;
 					font-family: $font-serif;
 					font-size: 20px;
-					line-height: 1.3;
+					line-height: 20px;
 					position: relative;
-					text-decoration: none;
-					top: 6px;
+					text-decoration: none;					
 					transition: padding 0.3s ease-in;
 
 					&:before{
@@ -61,14 +71,14 @@
 						background-color: $cc-brown;
 					}
 
-					&:hover::before,
-					&:focus::before {
+					&:hover::before
+					{
 						transform: scale(1,1);
 						transform-origin: left top;
 					}
 				}
 				a.active {
-						&:before{
+					&:before{
 						background-color: $cc-brown;
 						bottom: -5px;
 						content: '';
@@ -77,14 +87,14 @@
 						left: 0px;
 						position: absolute;						
 						width: 100%;
-						
+
 					}
 
 					&:before{
 						transform: none
 					}
 
-					
+
 				}
 			}
 		}

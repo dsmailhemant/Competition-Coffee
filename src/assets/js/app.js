@@ -7,9 +7,10 @@ app.flickity = function() {
 		resize: true,
 		cellAlign: 'left',
         autoPlay: true,
-        prevNextButtons: false,
+        prevNextButtons: true,
         pageDots: false,
-        wrapAround: true
+        wrapAround: true,
+        adaptiveHeight: false
         
                 
     });
@@ -18,6 +19,14 @@ app.flickity = function() {
 app.init = function(){
 	app.flickity();
 };
+
+function ResetTextBox(obj) {
+    $(obj).find('input[type=text]').val('');
+    $(obj).find('input[type=password]').val('');    
+    $(obj).find('input[type=checkbox]').prop('checked', false);
+    $(obj).find('textarea').val('');
+}
+
 
 $(function(){
     app.init();
@@ -36,13 +45,13 @@ $(function(){
         $('#menu').find('ul li>a:eq(0)').addClass('active');
 
    $('.chkcontact').click(function(e){
-       $('.interested').find('div.squaredOne').css('border',($('.interested').find('input[type="checkbox"]:checked').length>0)?'1px solid #756a69':'1.5px solid #ff0024');
+       $('.interested').find('div.squaredOne').css('border',($('.interested').find('input[type="checkbox"]:checked').length>0)?'1px solid #756a69':'1px solid #ff0024');
        var chk=TextBoxValidation('.contactform');
-       if(chk=false)
+       if(chk==false)
           return false;
-
-       e.stopPropagation();
-   })
+       else
+        $(this).closest('form').submit();
+   });
     
 
 });
@@ -54,25 +63,40 @@ function TextBoxValidation(obj) {
 		var v = $(this).val().trim();  
 		if (c == 'required' && v == '') {
             $(this).addClass("error");
-        	//($(this).closest("div").find('p.error').length>0)?"":$(this).closest("div").append('<p class="error text-danger">This field is required.</p>');
+        	($(this).closest("div").find('p.error').length>0)?"":$(this).closest("div").append('<p class="error text-danger">This field is required <sup>*</sup></p>');
             check = false;
         }
         else{
             if(!$(this).hasClass('more_error')){            
                 $(this).removeClass("error");
-                //$(this).closest("div").find('p.error').remove();
+                $(this).closest("div").find('p.error').remove();
             }
         }
     });
     return check;
 }
+/* Validation Funation */
+function OnlyNumeric(evt) {
+    var chCode = evt.keyCode ? evt.keyCode : evt.charCode ? evt.charCode : evt.which;
+    if ((chCode >= 48 && chCode <= 57) || chCode == 46 || (chCode >= 37 && chCode <= 40) || (chCode >= 8 && chCode <= 9) || (chCode == 3))
+        return true;
+    else
+        return false;
+}
+function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\.+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+
+
 
 /*!
  * SlickNav Responsive Mobile Menu v1.0.10
  * (c) 2016 Josh Cope
  * licensed under MIT
  */
-;(function ($, document, window) {
+(function ($, document, window) {
     var
     // default settings object.
         defaults = {
@@ -656,3 +680,84 @@ function TextBoxValidation(obj) {
         }
     };
 }(jQuery, document, window));
+
+$('.contactform').on('submit', function(e){
+    debugger;
+   var email= $('#email').val().trim();
+   var user = $('#user').val().trim();
+   var key = $('#key').val().trim();
+    if (!validateEmail(email)){
+        $('#email').css('border','1px solid #ff0024');
+        $('#email').focus();
+        return false;
+    }
+    var msg = '<h3 style="font-size: 20px; text-transform: uppercase;">Following are details  of user</h3><br/>';
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">Full Name : </b>' + $('#name').val().trim() + '<br/>';
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">Job Title : </b>' + $('#title').val().trim() + '<br/>';
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">Phone : </b>' + $('#phone').val().trim() + '<br/>';
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">Email : </b>' + email + '<br/>';
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">Company : </b>' + $('#company').val().trim() + '<br/>';
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">City : </b>' + $('#city').val().trim() + '<br/>';
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">Postal Code : </b>' + $('#postal').val().trim() + '<br/>';
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">Message : </b>' + $('#message').val().trim() + '<br/>';
+    var intested = [];
+    $('.interested').find('ul li').find('input[type="checkbox"]:checked').each(function () {
+        intested.push($(this).closest('li').find('span').text());
+    });
+    var intestedtxt = intested.join(',');
+    msg += '<b style="display:inline-block; width: 115px; text-transform: uppercase; text-align:right; margin-right: 7px">Interested In  : </b>' + intestedtxt + '<br/>';
+    var form = new FormData();
+    /* User Name*/
+    form.append("api_user",user);
+    /* Password*/
+    form.append("api_key",key);
+    form.append("to", "expertadvice@competitioncoffee.com");
+    form.append("toname", "Competition Coffee");
+    form.append("subject", "Someone want to contact you");
+    form.append("html", msg);
+    form.append("from", email);
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://api.sendgrid.com/api/mail.send.json",
+        "method": "POST",
+        "processData": false,
+        "contentType": false,
+        "mimeType": "multipart/form-data",
+        "data": form
+    }
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    }).fail(function (response) { });
+    $('.thanks_msg,.success_msg').fadeIn(700);
+    e.preventDefault();
+    return false;
+});
+
+
+
+
+$('.modal-header button').on('click', function (e) {
+    debugger;
+    $('.thanks_msg,.success_msg').fadeOut(700);
+    $('.contactform').find('#email').css('border', '1px solid #756a69 !important;');
+    $('.contactform').trigger("reset");
+});
+
+
+
+$('#email').on('blur', function (e) {
+    debugger;
+    if (!validateEmail($(this).val())) {
+        if ($(this).closest('div.form-group').find('p.text-danger').length == 0)
+            $(this).closest('div.form-group').append('<p class="error text-danger">Email id is not valid format <sup>*</sup></p>');
+
+        $(this).css('border', '1px solid #ff0024');
+        return false;
+    }
+    else {
+        $(this).closest('div.form-group').find('p.text-danger').remove();
+        $(this).css('border', '1px solid #756a69');
+
+    }
+});

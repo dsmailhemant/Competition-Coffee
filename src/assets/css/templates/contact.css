@@ -1,6 +1,6 @@
 .competition-coffee-contact {
     .cce-content-box.competition-coffee-wrapper {
-      margin-top: -16rem;
+         margin-top: -9rem;
       bottom: inherit;
     }
     form {
@@ -28,21 +28,24 @@
           height: 35px;
           margin-bottom: 10px;
           resize: none;
-          padding: 15px;
+          padding: 15px; border-radius: 0;
         }
       }
     }
   }
-  
-  .contactform input.error, .contactform textarea.error {
+.competition-coffee-equipment .cce-content-box .cce-hero-circle p a {
+  background-color: transparent !important;
+}
+  .contactform input[type="text"].error, .contactform textarea.error {
     border: 1px solid #ff0024 !important;
   }
   
   .competition-coffee-contact {
     .contactform input ~ p,.contactform textarea ~ p {
-      font-size: 14px;
+      font-size: 12px;
       color: #ff0024;
       margin-bottom: 15px;
+      font-family: 'Klinic Book', serif;
     }
     form .form-group label {
       color: #706463;
@@ -50,6 +53,9 @@
       font-size: 1.25rem;
       line-height: 1.3;
       margin-bottom: 10px;
+      sup{
+        font-size: 15px
+      }
     }
   }
   .interested{
@@ -65,9 +71,14 @@
   }
   
   .competition-coffee-contact form .form-group textarea {
-    min-height: 300px;
-  }
-  
+    height: 300px;
+    float: left;
+    width: 100%;
+    clear: both;
+}
+   sup{
+        font-size: 12px
+      }
   /* SQUARED ONE */
   
   .interested ul li {
@@ -98,17 +109,20 @@
           top: 2px;
           left: 2px;
         }
-        &:hover::after {
+        /* &:hover::after {
           -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
           filter: alpha(opacity = 30);
           opacity: 0.3;
-        }
+        } */
       }
       input[type=checkbox]:checked + label:after {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
         filter: alpha(opacity = 100);
         opacity: 1;
       }
+    }
+    span{
+      text-transform:capitalize;
     }
     display: flex;
     color: #706463;
@@ -121,7 +135,7 @@
   .competition-coffee-contact form {
     p {
       color: #706463;
-      font-family: 'Klinic Book', serif;
+          font-family: 'Klinic Bold', serif;
       font-size: 1.25rem;
       font-weight: bold;
       width: 65%;
@@ -137,3 +151,68 @@
       margin-top: 45px;
     }
   }
+
+.thanks_msg {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+  .success_msg {
+  background-color: white;
+  box-shadow: 2px 2px 27px 0px rgba(0, 0, 0, 0.15);
+  margin: 0% auto;
+  padding: 2% 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  max-width: 900px;
+  max-height: 300px;
+  transform: translate(-50%,-50%);
+  justify-content: space-between; 
+
+  .modal-header{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+        button {
+          font-family: 'Klinic Bold', serif;
+         font-size: 30px;
+          font-weight: bold;
+          color: #88c392;
+          outline: none;
+        }
+}
+  hr {
+    width: 100%;
+    border: 2px solid #88c392;
+  }
+  a {
+    background: #88c392;
+    height: 40px;
+    width: 150px;
+    color: #fff;
+    font-family: 'Klinic Book', serif;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+ p {
+    color: #706463;
+    font-family: 'Klinic Book', serif;
+    font-size: 1.25rem;
+    margin-bottom: 35px;
+ }
+}
+
